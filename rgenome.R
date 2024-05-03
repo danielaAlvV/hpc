@@ -29,6 +29,9 @@ head(daten)
 ggplot(daten, aes(x=V2, y=V3, col=V4))+ geom_point()+
   scale_y_log10()+
   scale_x_log10()+
+  xlab("Genome size")+
+  ylab("Number of genes")+
+  labs(color="GC content")+
   theme_bw()
 
  

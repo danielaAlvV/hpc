@@ -4,8 +4,8 @@ list=/LETHE/COURSES/data/bac_genomes/refseq/xad
 
 rm resultsgenome.txt
 
-for name in $(head $list);
+for name in $(cat $list);
     do 
-    sleep 1
-    srun genomeinscript.sh $name
+    sleep 0.1
+    srun -c 1 genomeinscript.sh $name & 
 done

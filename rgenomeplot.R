@@ -8,12 +8,16 @@ head(daten)
 #daten$threads_nseq <- interaction(daten$V2, daten$V3)
 
 #ggplot(daten, aes(x=V2, y=V3,col=V4))+
-  scale_y_log10()+
-  scale_x_log10()+
-  geom_smooth(se=F)+
-  theme_bw()
+  #scale_y_log10()+
+  #scale_x_log10()+
+  #geom_smooth(se=F)+
+  #theme_bw()
 
 ggplot(daten, aes(x=V2, y=V3, group= V4, col=V4))+ geom_point()+
   scale_y_log10()+
   scale_x_log10()+
+  scale_color_gradient(low= "green", high= "red")+
+  xlab("Genome size")+
+  ylab("Number of genes")+
+  labs(color="GC content")+
   theme_bw()
