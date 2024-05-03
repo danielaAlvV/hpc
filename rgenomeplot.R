@@ -1,8 +1,9 @@
 library(ggplot2)
 # install.packages("ggplot2")
 
-daten <- read.table("/Users/ra67tek/HPC-SS24/hpc/resultsgenome.txt", sep=";")
-
+#daten <- read.table("/Users/ra67tek/HPC-SS24/hpc/resultsgenome.txt", sep=";")
+#daten <- read.table("/Volumes/KELLER-COURSES/bacgenestat/complete.csv", sep=";")
+daten <- read.table("/Volumes/KELLER-COURSES/bacgenestat/part_taxonomy.csv", sep=";")
 
 head(daten)
 #daten$threads_nseq <- interaction(daten$V2, daten$V3)
@@ -13,11 +14,11 @@ head(daten)
   #geom_smooth(se=F)+
   #theme_bw()
 
-ggplot(daten, aes(x=V2, y=V3, group= V4, col=V4))+ geom_point()+
+ggplot(daten, aes(x=V2, y=V4, group= V5, col=V5))+ geom_point()+
   scale_y_log10()+
   scale_x_log10()+
-  scale_color_gradient(low= "green", high= "red")+
+  #scale_color_gradient(low= "green", high= "red")+
   xlab("Genome size")+
-  ylab("Number of genes")+
-  labs(color="GC content")+
+  ylab("GC Content")+
+  labs(color="Taxonomy")+
   theme_bw()
