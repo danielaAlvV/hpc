@@ -567,5 +567,5 @@ The results of the plot can be visualized on github. (Rplotgenometaxgc.png)
 <p> The course was really interesting and I am glad i decided to dive deeper into the computational branch of biology. It has for sure made me more aware of the ways super computers work and also, it has made me more confident, when using Linux and R. I also enjoyed a lot solving problems, it truely feels like a new part of my brain is developing to understand better and in more creative ways, how to solve challenges just like the ones we did in class. I am looking forward in the future to attend more classes in relationship with computational biology and programming and keep widening my knowledge on the topic. 
 
 # Ayudita
-### 1 guardar, 2 darle al plus, 3 name the change, 4 commit
+### 1 guardar, 2 darle al plus, 3 name the change, 4 commit <3
 
