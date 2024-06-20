@@ -2,7 +2,7 @@
 
 # Protocol HPC
 
-Name: Daniela Alvarado Vilanueva
+Name: Daniela Alvarado Villanueva
 
 Immatriculation Number: 12436419
 
